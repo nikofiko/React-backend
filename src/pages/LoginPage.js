@@ -23,7 +23,7 @@ import httpClient from '../utils/httpClient';
  
    const handleLogin = async () => {
      // Perform login logic here
-     const {data} = await httpClient.post("http://127.0.0.1:5000/login",{email,password})
+     const {data} = await httpClient.post("/login",{email,password})
      console.log(data);
 
      toast({

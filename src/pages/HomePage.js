@@ -12,7 +12,7 @@ export default function HomePage() {
   },[])
 
   const getData = async () => {
-    const {data} = await httpClient.get("http://127.0.0.1:5000/dashboard")
+    const {data} = await httpClient.get("/dashboard")
     console.log(data)
   }
 
